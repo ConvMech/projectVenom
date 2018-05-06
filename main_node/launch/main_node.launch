@@ -1,0 +1,15 @@
+<launch>
+  <node name="main_node" pkg="main_node" type="main_node.py"/>
+   
+  <node name="bag_listener" pkg="main_node" type="listener.py"/>
+    
+  <node name="rc_control" pkg="rc_control" type="rc_control"/>
+  
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch">
+  </include>
+  <!--
+  <include file="$(find mavros)/launch/apm.launch">
+  </include>
+  -->
+</launch>
+

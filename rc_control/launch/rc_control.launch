@@ -1,0 +1,3 @@
+<launch>
+  <node name="rc_control" pkg="rc_control" type="rc_control" output="screen" />
+</launch>
